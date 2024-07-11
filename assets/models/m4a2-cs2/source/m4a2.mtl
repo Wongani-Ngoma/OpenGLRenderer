@@ -1,0 +1,12 @@
+# Blender 3.6.11 MTL File: 'None'
+# www.blender.org
+
+newmtl weapon_rif_m4a4.006
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:/Users/Ngoma/source/repos/OpenGLRenderer3/assets/models/m4a2-cs2/textures/m4a4_default_color_psd_3b0b391e_2.png

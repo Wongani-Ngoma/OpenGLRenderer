@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5c02d7b2-e7fa-4247-a9c5-6770f8d70829}</ProjectGuid>
+    <RootNamespace>OpenGLRenderer</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\x32\Release\App_HelloWorld\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">App_HelloWorld_vs2010</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\x64\Release\App_HelloWorld\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">App_HelloWorld_vs2010_x64_release</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\x32\Debug\App_HelloWorld\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">App_HelloWorld_vs2010_debug</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">x64\Debug\OpenGLRenderer\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">OpenGLRenderer_x64_debug</TargetName>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\BulletDynamics_vs2010.lib;..\..\bin\BulletCollision_vs2010.lib;..\..\bin\LinearMath_vs2010.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_HelloWorld_vs2010.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\BulletDynamics_vs2010_x64_release.lib;..\..\bin\BulletCollision_vs2010_x64_release.lib;..\..\bin\LinearMath_vs2010_x64_release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_HelloWorld_vs2010_x64_release.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)App_HelloWorld_vs2010_debug.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\bin\BulletDynamics_vs2010_debug.lib;..\..\bin\BulletCollision_vs2010_debug.lib;..\..\bin\LinearMath_vs2010_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)App_HelloWorld_vs2010_debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP /wd4244 /wd4267 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Ngoma\source\repos\OpenGLRenderer\Libraries\include;C:\Users\Ngoma\source\repos\OpenGLRenderer\Libraries\include\bullet3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)App_HelloWorld_vs2010_x64_debug.pdb</ProgramDataBaseFileName>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>BT_THREADSAFE=1;BT_USE_DOUBLE_PRECISION;_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BulletDynamics_vs2010_x64_debug.lib;BulletCollision_vs2010_x64_debug.lib;LinearMath_vs2010_x64_debug.lib;glfw3.lib;glfw3dll.lib;glfw3_mt.lib;assimp-vc143-mtd.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)OpenGLRenderer_x64_debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>C:\Users\Ngoma\source\repos\OpenGLRenderer\Libraries\lib\bullet3;C:\Users\Ngoma\source\repos\OpenGLRenderer\Libraries\lib\GLFW;C:\Users\Ngoma\source\repos\OpenGLRenderer\Libraries\lib\assimp;C:\src\libs\bullet3\build3\vs2010\Libraries\lib\assimp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="graphics\EBO.cpp" />
+    <ClCompile Include="graphics\Light.cpp" />
+    <ClCompile Include="graphics\Material.cpp" />
+    <ClCompile Include="graphics\Mesh.cpp" />
+    <ClCompile Include="graphics\Model.cpp" />
+    <ClCompile Include="graphics\Shader.cpp" />
+    <ClCompile Include="graphics\Texture.cpp" />
+    <ClCompile Include="graphics\VAO.cpp" />
+    <ClCompile Include="graphics\VBO.cpp" />
+    <ClCompile Include="io\Camera.cpp" />
+    <ClCompile Include="io\Joystick.cpp" />
+    <ClCompile Include="io\Keyboard.cpp" />
+    <ClCompile Include="io\Mouse.cpp" />
+    <ClCompile Include="io\Screen.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="physics\PhysicsWorld.cpp" />
+    <ClCompile Include="physics\Rigidbody.cpp" />
+    <ClCompile Include="physics\stb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics\EBO.h" />
+    <ClInclude Include="graphics\Light.h" />
+    <ClInclude Include="graphics\Material.h" />
+    <ClInclude Include="graphics\Mesh.h" />
+    <ClInclude Include="graphics\Model.h" />
+    <ClInclude Include="graphics\models\Axes.hpp" />
+    <ClInclude Include="graphics\models\Cube.hpp" />
+    <ClInclude Include="graphics\models\Gun.hpp" />
+    <ClInclude Include="graphics\models\Lamp.hpp" />
+    <ClInclude Include="graphics\models\ModelArray.hpp" />
+    <ClInclude Include="graphics\models\Sphere.hpp" />
+    <ClInclude Include="graphics\Shader.h" />
+    <ClInclude Include="graphics\Texture.h" />
+    <ClInclude Include="graphics\VAO.h" />
+    <ClInclude Include="graphics\VBO.h" />
+    <ClInclude Include="io\Camera.h" />
+    <ClInclude Include="io\Joystick.h" />
+    <ClInclude Include="io\Keyboard.h" />
+    <ClInclude Include="io\Mouse.h" />
+    <ClInclude Include="io\Screen.h" />
+    <ClInclude Include="physics\PhysicsWorld.h" />
+    <ClInclude Include="physics\Rigidbody.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

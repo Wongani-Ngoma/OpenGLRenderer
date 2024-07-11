@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="examples">
+      <UniqueIdentifier>{773740DD-2F6B-5541-A0D3-87D663D0D305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples\HelloWorld">
+      <UniqueIdentifier>{A465CC6A-372F-574F-86B5-D6D568B623EE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="graphics\EBO.cpp" />
+    <ClCompile Include="graphics\Light.cpp" />
+    <ClCompile Include="graphics\Material.cpp" />
+    <ClCompile Include="graphics\Mesh.cpp" />
+    <ClCompile Include="graphics\Model.cpp" />
+    <ClCompile Include="graphics\Shader.cpp" />
+    <ClCompile Include="graphics\Texture.cpp" />
+    <ClCompile Include="graphics\VAO.cpp" />
+    <ClCompile Include="graphics\VBO.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="physics\stb.cpp" />
+    <ClCompile Include="physics\Rigidbody.cpp" />
+    <ClCompile Include="io\Camera.cpp" />
+    <ClCompile Include="io\Joystick.cpp" />
+    <ClCompile Include="io\Keyboard.cpp" />
+    <ClCompile Include="io\Mouse.cpp" />
+    <ClCompile Include="io\Screen.cpp" />
+    <ClCompile Include="physics\PhysicsWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics\models\Axes.hpp" />
+    <ClInclude Include="graphics\models\Cube.hpp" />
+    <ClInclude Include="graphics\models\Gun.hpp" />
+    <ClInclude Include="graphics\models\Lamp.hpp" />
+    <ClInclude Include="graphics\models\ModelArray.hpp" />
+    <ClInclude Include="graphics\models\Sphere.hpp" />
+    <ClInclude Include="graphics\EBO.h" />
+    <ClInclude Include="graphics\Light.h" />
+    <ClInclude Include="graphics\Material.h" />
+    <ClInclude Include="graphics\Mesh.h" />
+    <ClInclude Include="graphics\Model.h" />
+    <ClInclude Include="graphics\Shader.h" />
+    <ClInclude Include="graphics\Texture.h" />
+    <ClInclude Include="graphics\VAO.h" />
+    <ClInclude Include="graphics\VBO.h" />
+    <ClInclude Include="physics\Rigidbody.h" />
+    <ClInclude Include="io\Camera.h" />
+    <ClInclude Include="io\Joystick.h" />
+    <ClInclude Include="io\Keyboard.h" />
+    <ClInclude Include="io\Mouse.h" />
+    <ClInclude Include="io\Screen.h" />
+    <ClInclude Include="physics\PhysicsWorld.h" />
+  </ItemGroup>
+</Project>
